@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="QG1.css" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="QG1.js"></script>
+  </head>
+  <body>
+    <h1>Welcome To Your Quote Generator</h1>
+    <div class="container">
+      <div class="background">
+        <nav>
+          <ul>
+            <li><a href="QG1.html"> Quotes </a></li>
+            <li><a href="QG1favourite.html">Favourite</a></li>
+            <li><a href="#">Add a quote </a></li>
+          </ul>
+        </nav>
+
+        <div class="paragraph">
+          <div id="quotedisplay" class="quote">Your Quote Of The DAY</div>
+
+          <h5 id="author"></h5>
+        </div>
+
+        <i class="fas fa-heart" onclick="getfavouritequotes()"></i>
+
+        <button onclick="displaynextquote()" id="btn" class="custom-button">
+          Next
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
