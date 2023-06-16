@@ -1,4 +1,5 @@
 let index = 0;
+// array of quotes 
 let quotes = [
   {
     quote: "The only way to do great work is to love what you do.",
@@ -76,14 +77,18 @@ let quotes = [
     author: "Christian D. Larson",
   },
 ];
+ /*here we define the pointer to the currently displayed quote*/
 
-let ind = 0;
+
 function displaynextquote() {
+ // if we have reached the end of the list ,we revert to the beginning
   if (index >= quotes.length) {
     index = 0;
   }
+  //we replace the inside our element with the current quote
   document.getElementById("quotedisplay").innerText = quotes[index].quote;
   document.getElementById("author").innerText =
     "-" + quotes[index].author + "-";
+  //we increment the pointer to the next quote adress
   index++;
 }
